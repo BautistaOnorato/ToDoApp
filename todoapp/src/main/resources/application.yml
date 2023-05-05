@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/to_do_app
+    username: root
+    password: 45868559Bauti
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
