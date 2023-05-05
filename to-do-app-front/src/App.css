@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("./assets/bg.jpg");
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Inter', sans-serif;
+}
+
+header {
+  position: fixed;
+  background-color: #221D23;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+
+header .titulo {
+  color: #fff;
+  padding-left: 2rem;
+  font-size: 1.5rem;
+}
+
+nav {
+  padding-right: 2rem;
+}
+
+header p {
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+  line-height: 2rem;
+  transition: all .5s ease;
+}
+
+.btns-navbar p:hover {
+  color: #E8AF00;
+}
+
+.menu {
+  display: none;
+  margin-left: 1rem;
+  position: relative;
+}
+
+.menu svg {
+  cursor: pointer;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: #221D23;
+  padding: 2rem;
+  position: absolute;
+  text-align: end;
+  top: 40px;
+  right: 0;
+  margin-top: 1rem;
+  min-width: 100px;
+  border-radius: 5px;
+  box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+}
+
+main {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+
+.registro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.registro h1 {
+  font-size: 2.5rem;
+  margin: 2rem 0;
+  color: #221D23;
+}
+
+.registro form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+fieldset {
+  border: none;
+}
+
+.registro fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+}
+
+.input-form {
+  border: none;
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 0.5rem;
+  text-align: left;
+  margin-top: 10px;
+}
+
+input:focus, button:focus, textarea:focus {
+  outline: none;
+  border: none;
+}
+
+.input-form:focus {
+  border: 2px solid #221D23;
+}
+
+
+.registro fieldset svg {
+  position: absolute;
+  color: #221D23;
+  align-self: flex-end;
+  margin: auto 0;
+  margin-right: 10px;
+  bottom: 10%;
+  /* right: 10px; */
+  cursor: pointer;
+}
+
+.registro form button {
+  border: 2px solid transparent;
+  background-color: #221D23;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  width: 300px;
+  height: 40px;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.registro form button:hover {
+  background-color: transparent;
+  border: 2px solid #221D23;
+  color: #221D23;
+}
+
+.home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.tarea-form-container {
+  background-color: #29252a;
+  color: #fff;
+  height: 90vh;
+  position: fixed;
+  top: 10vh;
+  right: 0;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2rem;
+  gap: 20px;
+}
+
+.tarea-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.tarea-form label {
+  font-size: 1.2rem;
+}
+
+.tarea-form fieldset {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tarea-form textarea, .tarea-form input {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.tarea-form input {
+  height: 40px;
+}
+
+.tarea-form textarea {
+  font-family: 'Inter', sans-serif;
+  resize: vertical;
+  height: 300px;
+}
+
+.tarea-form button {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2rem;
+  border: 2px solid #E8AF00;
+  background-color: transparent;
+  color: #E8AF00;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tarea-form button:hover {
+  background-color: #E8AF00;
+  color: #29252a;
+}
+
+.tareas-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.tareas-container section {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  gap: 20px;
+}
+
+.tarea {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  gap: 20px;
+  min-height: 100px;
+  height: 120px;
+}
+
+.info-tarea {
+  padding: 1rem;
+}
+
+.info-tarea p {
+  margin-top: 10px;
+}
+
+.acciones-tarea {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 5px 5px 0;
+  height: 100%;
+  width: 20%;
+}
+
+.acciones-tarea div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.acciones-tarea .completar {
+  border-radius: 0 5px 0 0;
+  background-color: #197278;
+}
+
+.acciones-tarea .borrar {
+  background-color: #FF785A;
+  border-radius: 0 0px 5px 0;
+}
+
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .home {
+    flex-direction: column;
+  }
+  
+  .tarea-form-container {
+    position: static;
+    height: 100%;
+    width: 100%;
+  }
+
+  .tareas-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .tarea {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .acciones-tarea {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .acciones-tarea div {
+    padding: 0.5rem;
+  }
+
+  .acciones-tarea .completar {
+    border-radius: 0 0 0 5px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  header h2 {
+    font-size: 1.5rem;
+  }
+
+  .btns-navbar {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .saludo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .registro form, .registro {
+    width: 100%;
+  }
+
+  .registro fieldset {
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .input-form {
+    width: 100%;
+  }
+
+  .registro form button {
+    width: 90%;
+  }
+}
